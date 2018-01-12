@@ -107,6 +107,7 @@ void print()
                 temp->start_nsec / 1000,temp->res_addr,temp->type);
 		temp=temp->next;
 	}
+	printf("\n");	       
 }
 
 void arg_m(FILE *fp,lock_node read)
