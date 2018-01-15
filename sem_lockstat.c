@@ -113,7 +113,7 @@ int begin_module(void)
 {
 	int ret;
 	my_jprobe.kp.post_handler = handler_post;
-	my_jprobe.kp.addr = (kprobe_opcode_t *)kallsyms_lookup_name("down");
+	my_jprobe.kp.addr = (kprobe_opcode_t *)kallsyms_lookup_name("down");//kernel sem process?
 	if (!my_jprobe.kp.addr) {
 		printk("Couldn't find %s to plant jprobe\n", "sem_lock");
 		return -1;
