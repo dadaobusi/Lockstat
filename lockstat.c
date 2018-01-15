@@ -7,7 +7,7 @@
 #include<string.h>
 #include "lockstat.h"
 #define FILE_mutex "ab.txt"
-
+//global index
 static int i;
 int sleep_time;
 typedef struct locks
